@@ -62,7 +62,8 @@ header {
 .search-login-container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: max(10px, 1.5vw);
+    padding-right: max(10px, 1.5vw);;
 }
 .search-login-container div +  div {
     align-self: center;
@@ -71,11 +72,18 @@ header {
 .search-bar {
     display: none;
     background-color: var(--grey);
+    border-radius: 10px;
+    width: max(25vw, 250px);
+    padding: 5px;
 }
 
 .search-login-container div > a {
     color: var(--grey);
     font-size: clamp(0.7rem, 2vw, 1.7rem);
+}
+.search-login-container div {
+    
+    line-height: 0.9;
 }
 
 
@@ -148,6 +156,20 @@ header {
     
     max-height: 600px;
     width: auto;
+}
+
+/* Productos */
+
+main {
+    height: 100vh;
+}
+
+
+
+/* About */
+
+main {
+    height: 70vh;
 }
 
 
