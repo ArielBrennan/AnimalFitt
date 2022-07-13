@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +67,7 @@ header {
     display: flex;
     align-items: center;
     gap: max(10px, 1.5vw);
-    padding-right: max(10px, 1.5vw);;
+    padding-right: max(10px, 1.5vw);
 }
 .search-login-container div +  div {
     align-self: center;
@@ -98,7 +102,7 @@ header {
 
 
 .navbar-container {
-    
+    padding-left: max(10px, 1.2vw);
 }
 
 
@@ -203,9 +207,15 @@ main {
     
 }
 .img-container:hover {
-    filter: none;
+    
     transition: all 500ms;
 }
+
+.img-container > a:hover {
+    text-decoration: none;
+    color: var(--hulk2);
+}
+
 
 .gal-img-1 {
     background-image: url(/assets/img/protein.jpg);
@@ -255,8 +265,8 @@ main {
     color: var(--grey);
     filter: brightness(600%);
     font-size: clamp(1.75rem, 3vw, 3rem);
-    
 }
+
 
 /* Contacto */
 .form-title {
@@ -311,6 +321,7 @@ main {
 .data-container {
     display: flex;
     flex-direction: column;
+    margin: 10px auto;
 }
 .data-container > div{
     padding: max(10px, 1.5vw);
@@ -351,7 +362,7 @@ footer {
 
 footer > div{
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
     align-items: baseline;
 }
 
@@ -425,8 +436,17 @@ footer div div > h4 {
         "prot cr"
         "gan pree"
         "vit ind";
-        gap: 10px;
+        gap: 15px;
+        width: 80%;
+        margin: 50px auto;
+        border-radius: 20px;
     }
+
+
+    .bh1 {
+        margin-top: 50px;
+    }
+
     .prot {
         grid-area: prot;
         height: 100%;
@@ -454,12 +474,21 @@ footer div div > h4 {
 
 
     .img-container {
-        
+        border-radius: 5px;
+        box-shadow:9px 11px 14px -10px rgb(25 33 46 / 26%)
     }
+
 
 }
 
 @media screen and (min-width: 62rem){
+    .carrousel-container{
+        width: 80%;
+        margin: 50px auto;
+        
+    }
+    
+
     .search-bar {
         display: block;
     }
@@ -469,6 +498,8 @@ footer div div > h4 {
         display: flex;
         flex-direction: row;
         margin: 0 20px;
+        width: 80%;
+        margin: 50px auto;
     }
     .data-container > div{
         padding: max(10px, 1.5vw);
@@ -476,7 +507,7 @@ footer div div > h4 {
         text-align: center;
     }
     .data-container div > p{
-        font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+        font-size: clamp(0.65rem, 1.5vw, 1.2rem);
         
     }
     
