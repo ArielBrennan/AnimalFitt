@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --green: #6CAC00;
+    --grey: #F0F0F0;
+    --white: #FFFFFF;
+    --black: #000000;
+    --hulk1:#A3CD48;
+    --hulk2:#B9E584;
+    --font-xl: 3 rem;
+    --font-m: 1.5 rem;
+    --font-s: 1 rem;
+}
+
+
+body {
+    background-color: var(--white);
+}
+
+.header-container {
+    
+}
+
+/* Header */
+header {
+    background-color: var(--grey);
+}
+.brand-search-login-container {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.logo-container {
+
+}
+
+.logo {
+    
+    height: clamp(3rem, 10vw, 7rem);
+}
+
+.slogan-container {
+    justify-self: end;
+}
+
+.slogan {
+    width: clamp(9rem, 30vw, 22rem);
+}
+
+.search-login-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-login-container div +  div {
+    align-self: center;
+}
+
+.search-bar {
+    display: none;
+    background-color: var(--grey);
+}
+
+.search-login-container div > a {
+    color: var(--grey);
+    font-size: clamp(0.7rem, 2vw, 1.7rem);
+}
+
+
+.tbr1::after{
+    content: "\a";
+    white-space: pre;
+}
+#content2::before{
+    content: "\a";
+    white-space: pre;
+}
+
+
+.navbar-container {
+    
+}
+
+
+.navbar-container ul li > a{
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+
+
+.hamburguesa i {
+    display: block;    
+}
+
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu, .hamburguesa {
+    margin-bottom: 0;
+}
+
+
+.navbar-list {
+    display: none;
+    
+
+}
+.navbar-list a{
+    
+}
+
+#toggle-menu:checked + .navbar-list {
+    display: block;
+    margin-bottom: 0;
+    
+    
+}
+
+
+/* Título */
+
+
+.t1 {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+    text-align: center;
+}
+
+
+/* Carrousel */
+.carrousel-container{
+    
+    
+}
+.carousel-item > img{
+    
+    max-height: 600px;
+    width: auto;
+}
+
+
+
+
+
+/* Slogan */
+.bh {
+    height: 3px;
+    width: min(70%, 600px);
+    background-color: var(--hulk2);
+    color: var(--hulk2);
+    margin: 20px auto;
+}
+.t2 {
+    font-size: clamp(1.2rem, 2vw, 3rem);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Galería */
+.galeria-container {
+    
+}
+.img-container {
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.img-container:hover {
+    filter: none;
+    transition: all 500ms;
+}
+
+.gal-img-1 {
+    background-image: url(/assets/img/protein.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.gal-img-2 {
+    background-image: url(/assets/img/ganadorpeso.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal-img-3 {
+    background-image: url(/assets/img/fat-burner.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal-img-4 {
+    background-image: url(/assets/img/creatine.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal-img-5 {
+    background-image: url(/assets/img/vitamin.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gal-img-6 {
+    background-image: url(/assets/img/preworkout.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.gal-img-7 {
+    background-image: url(/assets/img/indumentaria.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria-container div a h3 {
+    color: var(--grey);
+    filter: brightness(600%);
+    font-size: clamp(1.75rem, 3vw, 3rem);
+    
+}
+
+/* Contacto */
+.form-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hulk2);
+    height: clamp(3rem, 10vw, 7rem);
+}
+.form-title h2{
+    font-size: clamp(1.75rem, 3vw, 3rem);
+}
+.contacto-container {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+.contacto-wrapper {
+    background-color: gray;
+}
+
+.user-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+#apellido, #nombre, #correo, #msg {
+    width: 100%;
+}
+.user-submit {
+    justify-self: center;
+    padding: 5px 10px;
+}
+
+/* Login/register */
+
+.login-form-container {
+    height: 70vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px 10px;
+    
+}
+
+
+/* Data */
+.data-container {
+    display: flex;
+    flex-direction: column;
+}
+.data-container > div{
+    padding: max(10px, 1.5vw);
+    width: 100%;
+    text-align: center;
+    
+}
+.data-container div > p{
+    font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+    font-weight: bold;
+}
+
+.data-container div:nth-child(1) {
+    
+    
+}
+.data-container div:nth-child(2) {
+    border-top: 2.5px solid var(--hulk2);
+    border-bottom: 2.5px solid var(--hulk2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: var(--grey);
+
+}
+.footer-b {
+    background-color: var(--grey);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.slogan-container2 {
+    padding: max(10px, 1.2vw);
+    
+}
+.logof {
+    height: clamp(1.2rem, 4vw, 3rem);
+}
+.horarios-container {
+    padding: max(10px, 1.2vw);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.horarios-container div div{
+    line-height: 70%;
+}
+
+.redes-container {
+    padding: max(10px, 1.2vw);
+}
+
+
+.brand-container {
+    display: flex;
+    align-items: flex-end;
+}
+.brand-container img{
+    align-self: baseline;
+}
+footer div div {
+    width: max(30%, 150px);
+    
+}
+footer div > p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+footer div div > h4 {
+    font-size: clamp(1.2rem, 2vw, 3rem);
+}
+
+/* Icons responsive*/
+
+.bi-person, .bi-cart2 {
+    font-size: clamp(1rem, 2.5vw, 1.8rem);
+}
+.bi-facebook, .bi-instagram, .bi-twitter, .bi-youtube {
+    font-size: clamp(0.5rem, 2.8vw, 2rem);
+}
+/* Queries */
+
+@media screen and (min-width: 43rem) {
+    /* Hamburguesa */
+    #toggle-menu, .hamburguesa {
+        display: none;
+    }
+    .navbar-list {
+        display: flex;
+        gap: 1%;
+        margin-bottom: 0;
+    }
+    /* Galeria */
+    .galeria-container {
+        display: grid;
+        grid-template-areas: 
+        "prot quem"
+        "prot cr"
+        "gan pree"
+        "vit ind";
+        gap: 10px;
+    }
+    .prot {
+        grid-area: prot;
+        height: 100%;
+    }
+    .quem {
+        grid-area: quem;
+    }
+    .cr {
+        grid-area: cr;
+    }
+    .gan {
+        grid-area: gan;
+        height: 300px;
+    }
+    .pree {
+        grid-area: pree;
+        height: 300px;
+    }
+    .vit {
+        grid-area: vit;
+    }
+    .ind {
+        grid-area: ind;
+    }
+
+
+    .img-container {
+        
+    }
+
+}
+
+@media screen and (min-width: 62rem){
+    .search-bar {
+        display: block;
+    }
+    
+    /* Data */
+    .data-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 20px;
+    }
+    .data-container > div{
+        padding: max(10px, 1.5vw);
+        width: max(50%, 150px);
+        text-align: center;
+    }
+    .data-container div > p{
+        font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+        
+    }
+    
+    .data-container div:nth-child(2) {
+        border-left: 2.5px solid var(--hulk2);
+        border-right: 2.5px solid var(--hulk2);
+        padding-left: 10px;
+        padding-right: 10px;
+        border-top: 0;
+        border-bottom: 0;
+    }
+    .data-container div:nth-child(1) {
+        border-top: 0;
+        margin-top: 0;
+    }
+
+}
