@@ -315,12 +315,20 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 .login-form-container {
     height: 70vh;
-    background-color: red;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 5px 10px;
     
+}
+.login-container, .reg-container {
+    border: 2px solid var(--grey);
+    box-shadow:9px 11px 14px -10px rgb(25 33 46 / 26%);
+    padding-top: ;
+    padding-bottom: ;
+    padding-left: ;
+    padding-right: ;
 }
 
 
@@ -447,6 +455,11 @@ footer div div > h4 {
         width: 80%;
         margin: 50px auto;
         border-radius: 20px;
+    }
+
+    .login-form-container {
+        display: flex;
+        flex-direction: row;
     }
 
 
