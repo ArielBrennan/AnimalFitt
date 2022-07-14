@@ -443,6 +443,10 @@ footer div div > h4 {
         gap: 1%;
         margin-bottom: 0;
     }
+    /* Carrousel */
+
+
+
     /* Galeria */
     .galeria-container {
         display: grid;
@@ -503,9 +507,11 @@ footer div div > h4 {
 
 @media screen and (min-width: 62rem){
     .carrousel-container{
-        width: 80%;
-        margin: 50px auto;
-        
+    width: 80%;
+    margin: 50px auto;
+    border: 0.7px solid var(--black);
+    border-radius: 5px;
+    box-shadow:9px 11px 14px -10px rgb(25 33 46 / 26%)
     }
     
 
