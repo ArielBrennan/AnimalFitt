@@ -449,7 +449,16 @@ footer div div > h4 {
 }
 i:hover {
     cursor: pointer;
+    color: var(--hulk2);
 }
+i:checked {
+    color: var(--hulk2);
+}
+footer div > a {
+    text-decoration: none;
+    color: var(--root);
+}
+
 /* Queries */
 
 @media screen and (min-width: 43rem) {
@@ -533,6 +542,7 @@ i:hover {
         border-radius: 5px;
         box-shadow:9px 11px 14px -10px rgb(25 33 46 / 26%)
     }
+
     /* contacto */
 
     .contacto-wrapper {
