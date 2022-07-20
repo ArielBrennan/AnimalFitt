@@ -269,11 +269,11 @@ main {
 
 
 /* Contacto */
-input[type=text], input[type=email], textarea, input[type=submit] {
+input[type=text], input[type=email], textarea, input[type=submit], input[type=password] {
     width: 100%;
     border-radius: max(4px);
 }
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus, input[type=password]:focus {
     background-color: var(--hulk2);
 }
 input[type=submit]:hover {
@@ -287,7 +287,7 @@ input[type=submit]:hover {
     height: clamp(3rem, 10vw, 7rem);
 }
 .form-title h2{
-    font-size: clamp(1.75rem, 3vw, 3rem);
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
 }
 .contacto-container {
     display: flex;
@@ -335,6 +335,17 @@ input[type=submit]:hover {
     margin-top: max(10px, 1.5vw);
     border-radius: 5px;
 }
+.password-label {
+    display: block;
+}
+
+.login-container div div {
+    padding: 5px 10px;
+}
+.reg-container div div {
+    padding: 5px 10px;
+}
+
 
 
 /* Data */
@@ -478,7 +489,7 @@ i:hover {
     width: 40%;
 }
 .reg-container {
-    height: 60%;
+    height: 65%;
 }
 .user-submit2 {
     width: 50%;
