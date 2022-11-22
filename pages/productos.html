@@ -40,21 +40,49 @@
                     <div><a href="/pages/login-register.html"><span class="tbr1">Iniciar sesión/</span><span class="tbr2">Registarme</span></a></div>
                     <div>
                     <a href="/pages/login-register.html"><i class="bi bi-person text-white"></i></a>
-                    <a href=""><i class="bi bi-cart2 text-white"></i></a>
+                    <a class="cartBtn" href=""><i class="bi bi-cart2 text-white"></i></a>
                     </div>
                 </div>
             </div>
             <nav class="navbar-container">
                 <label for="toggle-menu" class="hamburguesa"> <i class="fas fa-bars"></i> </label>
-                <input type="checkbox" id="toggle-menu">
+                <!-- <input type="checkbox" id="toggle-menu"> -->
                 <ul class="navbar-list">
                     <li><a class="text-dark font-weight-bold" href="/index.html">Home</a></li>
-                    <li><a class="text-dark font-weight-bold" href="/pages/productos.html">Suplementos</a></li>
+                    <li><a class="text-dark font-weight-bold" href="/pages/productos.html">Productos</a></li>
                     <li><a class="text-dark font-weight-bold" href="/pages/about-us.html">Quienes somos</a></li>
                     <li><a class="text-dark font-weight-bold" href="/pages/contacto.html">Contacto</a></li>
                     <li><a class="text-dark font-weight-bold" href="/pages/login-register.html">Iniciar sesión/registrarme</a></li>
                 </ul>
             </nav>
+            <div id="carrito" class="carrito">
+                <!-- <button id="x" class="x">x</button> -->
+                <h2>Tus productos</h2>
+                <div id="carritoProdContainer" class="cart-container">
+<!--                     <div class="cart-product">
+                        <div><img src="./assets/img/Photo Menu (11).png" alt=""></div>
+                        <div class="cart-product-info"><p>Bennazianna</p><p class="cart-product-info-b">La más completa</p><p class="cart-product-info-c">$3650</p></div>
+                        <div class="cart-btns"><button id="restUnitBtn" class="substract-btn">-</button><input type="number" value="1"><button id="addUnitBtn" class="add-btn">+</button></div>
+                    </div> -->
+                </div>
+                <div class="cart-subinfo">
+                    <div><p>Subtotal:</p><p id="subtotal"></p></div>
+                    <div><p>Envío:</p><p></p></div>
+                </div>
+                <hr class="cart-divider">
+                <div>
+                    <div class="cart-total">
+                    <p>Total:</p><p><span id="total" class="totalCount"></span></p>
+                    </div>
+                    <div class="cart-end">
+                    <button id="addToCartBtn"  class="buy-btn">COMPRAR</button>
+                    </div>        
+                </div>
+            </div>
+
+                
+            </div>
+            <div class="overlay"></div>
         </header>
     </div>
     <div class="form-title">
@@ -73,7 +101,7 @@
                 <li></li>
             </ul>
         </nav>
-        <div>
+<!--         <div>
             <h2>Proteínas</h2>
             <section></section>
             <h2>Pre entrenamiento</h2>
@@ -90,7 +118,41 @@
             <section></section>
             <h2>Indumentaria</h2>
             <section></section>
-        </div>
+        </div> -->
+
+
+        
+
+        <div class="categories">
+            <button class="category">Productos</button>
+            <button class="category" data-category="proteinas">Proteínas</button>
+            <button class="category" data-category="preentrenos">Pre entrenamiento</button>
+            <button class="category" data-category="quemadores">Quemadores de grasa</button>
+            <button class="category" data-category="ganadores">Ganadores de peso</button>
+            <button class="category" data-category="creatinas">️Creatinas</button>
+            <button class="category" data-category="aminoacidos">Aminoácidos</button>
+            <button class="category" data-category="vitymin">️Vitaminas/Minerales</button>
+          </div>
+          <!-- products -->
+          <div class="products-container">
+
+
+
+
+
+
+        
+
+
+
+
+                
+
+              </div>
+              <div class="add-modal"></div>
+
+
+
     </main>
     <footer class="footer-b">
         <div>
@@ -120,5 +182,8 @@
             </div>
         </div>
     </footer>
+    <script  type="module" src="/data.js"></script>
+    <script  type="module" src="/index.js"></script>
+    <!-- <script type="module" src="/shop.js"></script> -->
 </body>
 </html>
