@@ -30,12 +30,12 @@ const total = document.querySelector(".totalCount");
 
 
 
-console.log(add)
+/* console.log(add)
 
 
 
 console.log(productsContainer)
-console.log(split)
+console.log(split) */
 
 
 
@@ -46,7 +46,7 @@ let carritoLs = JSON.parse(localStorage.getItem("cartProducts")) || [];
 
 
 
-console.log(carritoLs)
+/* console.log(carritoLs) */
 
 let saveLs = (products) => localStorage.setItem("cartProducts", JSON.stringify(products));
 
@@ -107,7 +107,7 @@ let renderProducts = (product) => {
 
 let productArray = products.map(product => renderProducts(product));
 
-productsContainer.innerHTML = productArray.join("");
+/* productsContainer.innerHTML = productArray.join(""); */
 
 
 
@@ -131,7 +131,7 @@ return `
 </div>`
 
 }
-
+carritoContainer.innerHTML = carritoLs.map(product => renderCartProduct(product)).join("");
 
 const addUnitToProduct = (product) => {
     carritoLs = carritoLs.map((cartProduct) => {
@@ -333,3 +333,17 @@ btnPre.addEventListener("click", changeFilterState)
 btnInd.addEventListener("click", changeFilterState)
 
 console.log(btnProt) */
+
+
+const initRenderProducts = () => {
+    
+    if(window.location.pathname == '/pages/productos.html') {
+    
+
+    productsContainer.innerHTML = productArray.join("");
+    addEvent(addToCartBtn, sendToCart)
+    }
+}
+initRenderProducts()
+
+
