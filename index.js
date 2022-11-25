@@ -98,7 +98,7 @@ let renderProducts = (product) => {
         data-price='${price}' 
         data-category='${category}'
         data-id='${id}'
-        class="addToCartBtn" >Añadir al carrito</button>
+        class="addToCartBtn btn" >Añadir al carrito</button>
     </div>
 </div>`
 }
@@ -118,12 +118,12 @@ return `
 <div class="cart-product">
     <div><img src="${img}" alt=""></div>
     <div class="cart-product-info"><p>${name}</p><p class="cart-product-info-b">${info}</p><p class="cart-product-info-c">$${price}</p></div>
-    <div class="cart-btns"><button 
+    <div class="cart-btns" btn><button 
     data-img='${img}'
     data-name='${name}'
     data-info='${info}'
     data-price='$${price}'
-    class="substract-btn" data-id='${id}'>-</button><span class="span-quantity">${quantity}</span><button class="add-btn" data-id='${id}'
+    class="substract-btn btn" data-id='${id}'>-</button><span class="span-quantity">${quantity}</span><button class="add-btn btn" data-id='${id}'
     data-name='${name}'
     data-info='${info}'
     data-price='${price}'
