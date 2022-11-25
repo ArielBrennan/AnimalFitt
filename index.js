@@ -90,8 +90,9 @@ let renderProducts = (product) => {
     <div class="card-body">
     <h5 class="card-title">${name}</h5>
     <p class="card-text">${info}</p>
-    <p class="card-price">${price}</p>
+    <p class="card-price">$${price}</p>
     <button
+        data-img='${img}'
         data-name='${name}'
         data-info='${info}'
         data-price='${price}' 
@@ -118,9 +119,10 @@ return `
     <div><img src="${img}" alt=""></div>
     <div class="cart-product-info"><p>${name}</p><p class="cart-product-info-b">${info}</p><p class="cart-product-info-c">$${price}</p></div>
     <div class="cart-btns"><button 
+    data-img='${img}'
     data-name='${name}'
     data-info='${info}'
-    data-price='${price}'
+    data-price='$${price}'
     class="substract-btn" data-id='${id}'>-</button><span class="span-quantity">${quantity}</span><button class="add-btn" data-id='${id}'
     data-name='${name}'
     data-info='${info}'
@@ -291,7 +293,7 @@ const handleMinusBtnEvent = (name) => {
   };
   
   const showTotal = () => {
-    total.innerHTML = `${getCartTotal()}`;
+    total.innerHTML = `$${getCartTotal()}`;
   };
 
 
