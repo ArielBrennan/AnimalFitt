@@ -304,8 +304,14 @@ console.log(total)
 
 console.log(carritoLs)
 
+/* const quitCart = (e) => {
+    if(!e.target.classList.contains("carrito")){
+        overlay.classList.remove('active')
+        carrito.classList.remove('active')
+    }
+}
 
-
+window.addEventListener("click", quitCart) */
 
 
 
