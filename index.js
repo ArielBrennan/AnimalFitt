@@ -308,10 +308,11 @@ console.log(carritoLs)
     if(!e.target.classList.contains("carrito")){
         overlay.classList.remove('active')
         carrito.classList.remove('active')
-    }
+    console.log("click en ventana del documento")
+    } 
 }
 
-window.addEventListener("click", quitCart) */
+document.addEventListener("click", quitCart) */
 
 
 

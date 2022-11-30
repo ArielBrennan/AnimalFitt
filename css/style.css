@@ -25,6 +25,7 @@ html {
 
 body {
     background-color: var(--white);
+    
 }
 
 .header-container {
@@ -176,8 +177,8 @@ header {
     top: 0px;
     left: 0;
 
-    /* overflow-y: auto; */
-    height: 100vh;
+    overflow-y: auto;
+    min-height: 100vh;
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(5px);
@@ -198,6 +199,7 @@ header {
     width: max(453px, 15vw);
     /* width: clamp(9rem, 30vw, 30rem); */
     min-height: 100vh;
+    overflow-y: auto;
     left: 1660px;
     top: 0px;
     right: 0px;
