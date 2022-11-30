@@ -354,3 +354,14 @@ const initRenderProducts = () => {
 initRenderProducts()
 
 
+const closeOnScroll = () => {
+    if (
+        !overlay.classList.contains("active") &&
+        !carrito.classList.contains("active")
+    )
+        return;
+    overlay.classList.remove("active");
+    carrito.classList.remove("active");
+};
+
+window.addEventListener("scroll", closeOnScroll);
